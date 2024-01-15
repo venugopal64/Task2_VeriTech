@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Launching </title>
+    <style>
+        #logo{
+            width: 35px;
+            height: 25px;
+            /* padding-right: 450px; */
+            display:inline;
+            padding-right: 550px;
+        }
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            font-size: 22px;
+            padding: 0px 15px;
+            justify-content: space-between;
+            
+        }ul li button{
+            /* border-radius: 5px; */
+            border: none;
+            font-size: 20px;
+            color: white;
+            background: none;
+        }
+
+        body{
+            background-image: url("images/BCG\ image1.jpg");
+            color: white;
+
+        }
+        #headercontent{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #imagesetting img{
+            width: 600px;
+            height: 400px;
+            background-color: black;
+
+        }
+        #section1{
+            /* color: rgb(206, 183, 154); */
+            display: flex;
+            justify-content:space-between;
+            margin: 5px;
+            padding: 12px 50px 50px 2px;
+            background-color: black;
+            }
+            #heading{
+                color: rgb(223, 195, 161);
+                font-size: 35px;
+            }
+        #content{
+            color:aquamarine;
+            font-size: 20px;
+            padding-right: 20px;
+        }
+        #main_heading_of_feature{
+            text-align: center;
+            color: rgb(138, 108, 69);
+            font-size: 30px;
+        }
+        .Featuresofcar{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 5px;
+            row-gap: 10px;
+        }
+        .Featuresofcar .featuresofimage img{
+            width: 500px;
+            height: 250px;
+            margin: 20px;
+        }
+        .Featuresofcar .featuresofheading{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 25px;
+            padding: 2px 50px 2px 50px;
+        }
+        .Featuresofcar .featuresofcontent{
+            font-size: 20px;
+            margin: 25px;
+            padding: 2px 50px 2px 50px;
+        }
+        #center{
+            justify-content: center;
+            text-align:center;
+        }
+        footer{
+            background-color: cadetblue;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0px 100px 8px 100px;
+           
+
+        }
+        .footercontent{
+            padding: 8px 100px 8px 100px;
+        }
+        .footercontent div{
+            padding: 8px 100px 8px 100px;
+        }
+        #center p:nth-child(2){
+            padding: 2px 80px 80px 2px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #logo {
+                padding-right: 150px; /* Adjust as needed for smaller screens */
+            }
+            ul li {
+                font-size: 18px;
+                padding: 0px 10px;
+            }
+            #headercontent {
+                flex-direction: column;
+                align-items: center;
+            }
+            #imagesetting img {
+                width: 100%;
+                height: auto;
+            }
+            #section1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            #content {
+                padding-right: 0;
+            }
+            .Featuresofcar {
+                grid-template-columns: 100%;
+            }
+            .Featuresofcar .featuresofimage img {
+                width: 100%;
+                height: auto;
+            }
+            #center p:nth-child(2) {
+                padding: 2px 20px 20px 2px;
+            }
+            .footercontent {
+                padding: 8px;
+            }
+            #center img{
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- <img src="tata logo.png" style="width: 30px; height: 10px;"></img> -->
+        <header id="headercontent">
+            
+            <ul>
+                <img src="images/tata logo.png" id="logo"></img>
+                <li>Home</li>
+                <li>About</li>
+                <li>Features</li>
+                <li>Contacts</li>
+                <li><button>Signin</button></li>
+                <li><button>Login</button></li>
+
+            </ul>
+        </header>
+    </nav>
+    <section id="section1">
+        <div>
+            <h1 id="heading">Explore the <br>world with<br><span style="color: blue;"> comfortable car</span></h1>
+            <div id="content">It is available in 68 variants, with engine options ranging from 1199 to
+                 1497 cc and a choice of 2 transmissions: Manual and Automatic</div>
+        </div>
+        <div id="imagesetting">
+            <img src="images/tata car1.jpg" alt="Image loging pleace wait">
+        </div>
+    </section>
+
+    <section>
+        <h1 id="main_heading_of_feature">Features</h1>
+
+        <div class="Featuresofcar">
+            <div>
+                <div class="featuresofheading">
+                    R16 Alloy Wheels with Aero Inserts
+                </div>
+                <div class="featuresofcontent">
+                    Design meets function with attractive rims that will wheel in all the looks and compliments.
+                </div>
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/specification1.webp">
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/specification2.webp">
+
+            </div>
+            <div>
+                <div class="featuresofheading">
+                    2-Spoke Steering Wheel with Illuminated Logo
+                </div>
+                <div class="featuresofcontent">
+                    Wrap your hands around a bespoke leather grip that’ll add a glow to your face.
+                </div>
+            </div>
+            
+        </div>
+        <div id="center">
+            <p>Technology</p>
+            <h1>Futuristic Technology</h1>
+            <p>New Nexon offers latest tech features like first in segment 10.25” infotainment system
+                 by Harman and 10.25” digital instrument cluster, Connected Vehicle technology
+                  with IRA 2.0 and many more.</p>
+        </div>
+        <div class="Featuresofcar">
+            <div>
+                <div class="featuresofheading">
+                    26.03 cm Floating Infotainment System by Harman
+
+                </div>
+                <div class="featuresofcontent">
+                    Superior acoustics that’ll make every drive a concert on wheels and make your heart sing with joy.
+                </div>
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef1.webp">
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef2.webp">
+
+            </div>
+            <div>
+                <div class="featuresofheading">
+                    Navigation Display on Instrument Cluster
+
+                </div>
+                <div class="featuresofcontent">
+                    Set off on journeys unafraid with convenient access to maps always powering you
+                </div>
+            </div>
+            
+        </div>
+        <div id="center">
+            <p>Performance</p>
+            <h1>Exciting Performance</h1>
+            <p>New Nexon outperformance all competition with Turbocharged Petrol and Diesel engine.
+                 New Nexon is geared with monostable shifter with paddle
+                  shifter in AMT and DCT transmision for refined ergonomics.</p>
+        </div>
+        <div class="Featuresofcar">
+            <div>
+                <div class="featuresofheading">
+                    Turbocharged Engine
+
+
+                </div>
+                <div class="featuresofcontent">
+                    Rev up the all new BS-VI compliant engine and feel the
+                     power it has to offer in both petrol and diesel variants.
+                     - 1.2l Turbocharged Revotron Petrol with Class-leading 120PS (88.2 kW) power.
+                    - 1.5l Turbocharged Revotorq Diesel with Class-leading 115PS (84.5 kW) power.
+                </div>
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef3.webp">
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef4.webp">
+
+            </div>
+            <div>
+                <div class="featuresofheading">
+                    Ground Clearance
+                    
+
+                </div>
+                <div class="featuresofcontent">
+                    High seating stance that makes you feel on top of the world and provide 
+                    better vision of what’s ahead.
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <p>Safety</p>
+            <h1>Fortified Cabin</h1>
+            <p>Drive securely while being cocooned inside an iron-clad 
+                frame that’ll protect you from the world and keep you 
+                safe on your adventures.</p>
+            <div><img src="images/imagef5.webp"></div>
+        </div>
+        <div class="Featuresofcar">
+            <div>
+                <div class="featuresofheading">
+                    6 Airbags
+
+                </div>
+                <div class="featuresofcontent">
+                    Uncompromising safety that provides more protection to
+                     you and your dear ones in every journey.
+                </div>
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef6.webp">
+
+            </div>
+            <div class="featuresofimage">
+                <img src="images/imagef7.webp">
+
+            </div>
+            <div>
+                <div class="featuresofheading">E-Call / B-Call
+                    
+
+                </div>
+                <div class="featuresofcontent">
+                    Any given day we're just a call away.
+                    
+                    E-Call 24/7 assistance in the case of an emergency.
+                    
+                    B-Call 24/7 assistance in an event of a car breakdown.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footercontent">
+                <div><h3>Quick Links</h3></div>
+                <div>Contact Us</div>
+                <div>Privacy Policy</div>
+                <div>Terms & Condition</div>
+                
+            </div>
+            <div class="footercontent"><div><h3>Social</h3></div>
+                <div>Facebook</div>
+                <div>Teitter</div>
+                <div>Youtube</div>
+                
+            </div>
+            <div>
+                Copyright © 2023 TATA Motors. All Rights Reserved
+            </div>
+        </div>
+       
+    </footer>
+    
+</body>
+</html>
